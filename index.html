@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css">
+        <title>Guess the number!</title>
+    </head>
+    <body>
+        <main>
+            <section id="title"><h1>Guess the number!</h1></section>
+            <section id="rules">
+                <p>I've picked a number between 1 and 100. Can you guess it in less than 10 attempts?</p>
+                <p>To help, I'll tell you if your guess is lower or higher than my number
+                    and  will display the range of your possible answer.</p>
+                <p class="pink">Good luck!</p>
+            </section>
+            <section id="guess">
+                <form id="form">
+                    <input id="guessing" name="guessing" type="number" required placeholder="Your guess?" min="1" max="100">
+                    <input id="submit" type="submit" for="guessing" lang="en">
+                </form>
+            </section>
+            <section id="result">
+                <span></span>
+            </section>
+            <section id="range">
+                <p class="pink space">Your range:</p>
+                <div id="invalid-range">
+                    <div id="valid-range">
+                        <span id="min-range" class="range-number"></span>
+                        <span id="max-range" class="range-number"></span>
+                    </div>
+                </div>
+            </section>
+            <section id="max-attempts"></section>
+            <section id="previous-attempts">
+                <p>Your previous attempts were: <span id="last-attempts" class="number"></span>.</p>
+            </section>
+            <section id="play">
+                <button id="play-button">Play</button>
+            </section>
+            <section id="restart">
+                <button id="restart-button">Play Again?</button>
+            </section>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>

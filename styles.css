@@ -1,0 +1,154 @@
+:root{
+    --black : #342C3A;
+    --fairest-pink: #FAECF0;
+    --pink: #FFC4D3;
+    --accent-pink: #F583A0;
+    --valid-range : #5CE2BE;
+    --invalid-range: #BAF3E4;
+    --text-valid-range: #fff;
+    --text-invalid-range: #25C79C;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--fairest-pink);
+    color: var(--black);
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+        top: 10rem;
+}
+
+main{
+    background-color: var(--pink);
+    margin: auto;
+    width: 80%;
+    max-width: 900px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    border-radius: 2rem;
+}
+
+section{
+    width: 100%;
+    margin: 1rem 0;
+    max-width: 1000px;
+}
+
+.pink{
+    color: var(--accent-pink);
+    font-weight: bold;
+}
+
+.number, .r-number{
+    font-weight: bolder;
+}
+
+
+p{
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+p:last-of-type{
+    margin-bottom: 0;
+}
+
+h1{
+    font-size: 3em;
+    font-style: italic;
+    text-shadow:
+        1px 1px var(--accent-pink),
+        2px 2px var(--accent-pink);
+    
+}
+
+/* RANGE */
+
+div{
+    height: 2rem;
+    border-radius: 2em;
+}
+
+#invalid-range{
+    background-color: var(--invalid-range);
+    color: var(--text-invalid-range);
+    margin-top: 0.5em;
+}
+
+#valid-range{
+    background-color: var(--valid-range);
+    color: var(--text-valid-range);
+    width: 100%;
+    border-radius: 2em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.range-number{
+    font-weight: bolder;
+    font-size: 0.8em;
+}
+
+
+/* GUESSING */
+
+#guessing, #submit{
+    height: 3rem;
+    font-size: 0.9em;
+    border-radius: 0.5em;
+    border: 0;
+}
+
+#guessing {
+    width: 45%;
+    padding: 0.5em;
+}
+
+#submit{
+    width: 15%;
+    background-color: var(--black);
+    color: #fff;
+}
+
+#submit:hover {
+    border: solid 2px var(--accent-pink);
+}
+
+#submit:active{
+    background-color: var(--accent-pink);
+}
+
+/* RESTART */
+
+#restart-button, #play-button{
+    height: 3rem;
+    width: 25%;
+    padding: 0 0.5em;
+    background-color: var(--accent-pink);
+    color: var(--fairest-pink);
+    border: 0;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+#restart-button:hover, #play-button:hover{
+    border: 2px solid var(--fairest-pink);
+}
+
+#restart-button:active, #play-button:active{
+    background-color: #342C3A;
+}
